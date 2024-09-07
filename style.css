@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+TAS:wght@100..400&display=swap');
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 0.88rem;
+  background-color: rgb(218, 215, 215);
+}
+
+h2 {
+  text-align: center;
+  margin-top: 100px;
+  letter-spacing: 7px;
+  font-size: 35px;
+  font-family: "Playwrite AU TAS", cursive;
+  transition: transform 0.5s ease;
+}
+
+h2:hover {
+  transform: scale(1.1); /* Ingrandisce il testo del 10% */
+}
+
+h4 {
+  letter-spacing: 3px;
+  font-size: 19px;
+}
+
+.underline {
+  width: 4rem;
+  height: 0.29rem;
+  background: rgb(217, 165, 21);
+  margin: auto;
+  margin-top: 9px;
+}
+
+.btn-container {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.btn {
+  width: 8em;
+  height: 3em;
+  border-radius: 30em;
+  font-size: 13px;
+  font-family: inherit;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 3px 3px 3px #c5c5c5,
+              3px 3px 3px #ffffff;
+              margin-left: 20px;
+              font-family: "Playwrite AU TAS", cursive;
+
+}
+
+.btn::before {
+  content: '';
+  width: 0;
+  height: 3em;
+  border-radius: 30em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, rgb(217, 165, 21) 0%, rgba(236, 192, 70, 0.787) 100%);
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+}
+.btn:hover::before {
+  width: 9em;
+ }
+.photo {
+  height: 230px;
+  width: 240px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  border: 0.25rem solid #ad8344;
+}
+
+.info-section header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.3px dotted;
+}
+
+.info-section h4 {
+  margin-bottom: 0.1rem;
+  font-family: "Playwrite AU TAS", cursive;
+  font-size: 19px;
+}
+
+.price {
+  color: rgb(182, 139, 19);
+  font-family: "Playwrite AU TAS", cursive;
+ padding: 3px;
+}
+
+.section-menu {
+  margin-top: 60px;
+  display: grid;
+  gap: 2rem;
+  width: 90vw;
+  max-width: 1200px;
+  margin: 60px auto;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.menu-item {
+  background: rgb(221, 220, 219);
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 9px 15px rgba(0, 0, 0, 0.1);
+}
+.menu-item:hover{
+  background-image: linear-gradient(to right, #c8c8c6 0%, #d0d0ccf9 100%);
+  transition: .5s ease;
+  box-shadow: 3px 3px 3px #afabab,
+              3px 3px 3px #afabab;
+
+}
+.item-text {
+  margin-bottom: 0;
+  padding-top: 1rem;
+  color: #6c6969;
+  
+}
+
+@media screen and (min-width: 768px) {
+  .menu-item {
+    grid-template-columns: 225px 1fr;
+    gap: 0 1.25rem;
+    max-width: 40rem;
+  }
+
+  .photo {
+    height: 175px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .photo {
+    height: 150px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: linear;
+  }
+}

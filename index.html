@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+TAS:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://w7.pngwing.com/pngs/554/203/png-transparent-restaurant-computer-icons-food-menu-menu-text-eating-plate-lunch-thumbnail.png">
+    <title>My Menu</title>
+</head>
+
+<body>
+    <section class="menu">
+        <div class="title">
+            <h2>MENU</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="btn-container">
+            <button class="btn" type="button" data-id="all">All</button>
+            <button class="btn" type="button" data-id="breakfast">Breakfast</button>
+            <button class="btn" type="button" data-id="lunch">Lunch</button>
+            <button class="btn" type="button" data-id="shakes">Shakes</button>
+            <button class="btn" type="button" data-id="dinner">Dinner</button>
+        </div>
+        <div class="section-menu">
+            <article class="menu-item">
+                <img src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-1.jpeg" class="photo" alt="pancakes">
+                <div class="info-section">
+                    <header>
+                        <h4>Pancakes</h4>
+                        <h4 class="price">5,99€</h4>
+                    </header>
+                    <p class="item-text">Flour, Sugar, Leaveners, Salt, Buttermilk, Milk, Eggs and Butter</p>
+                </div>
+            </article>
+            <article class="menu-item">
+                <img src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-2.jpeg" class="photo" alt="Diner Double">
+                <div class="info-section">
+                    <header>
+                        <h4>Diner Double</h4>
+                        <h4 class="price">14,99€</h4>
+                    </header>
+                    <p class="item-text">Two ¼ pound patties on a potato roll with house pickles, spinach, tomatoes, American cheese, onion, and special sauce.</p>
+                </div>
+            </article>
+            <article class="menu-item">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/delish-202104-strawberrymilkshake-034-1620756322.jpg?crop=1.00xw:0.802xh;0,0&resize=640:*" class="photo" alt="milkshake">
+                <div class="info-section">
+                    <header>
+                        <h4>Vanilla Milkshake</h4>
+                        <h4 class="price">8.90€</h4>
+                    </header>
+                    <p class="item-text">
+                        Vanilla ice cream, milk and teaspoon vanilla extract </p>
+                </div>
+            </article>
+            <article class="menu-item">
+                <img src="https://www.giallozafferano.it/images/177-17723/Avocado-toast_650x433_wm.jpg" class="photo" alt="milkshake">
+                <div class="info-section">
+                    <header>
+                        <h4>Avocado Toast</h4>
+                        <h4 class="price">7.90€</h4>
+                    </header>
+                    <p class="item-text"> Homemade bread, ½ ripe avocado, Smoked Salmon, Extra virgin olive oil, Eggs, Lemon juice</p>
+                </div>
+            </article>
+            <article class="menu-item">
+                <img src="https://thesaltymarshmallow.com/wp-content/uploads/2018/08/oreo-milkshake-featured.jpg" class="photo" alt="milkshake">
+                <div class="info-section">
+                    <header>
+                        <h4>Oreo Milkshakes </h4>
+                        <h4 class="price">4.90€</h4>
+                    </header>
+                    <p class="item-text"> Vanilla Ice Cream, Milk, Oreo Cookies, Teaspoon Vanilla Extract, Whipped Cream. </p>
+                </div>
+            </article>
+            <article class="menu-item">
+                <img src="https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2021/09/beef-burger-1200x675.jpg" class="photo" alt="milkshake">
+                <div class="info-section">
+                    <header>
+                        <h4>American Burgers
+                                            </h4>
+                        <h4 class="price">16.00€</h4>
+                    </header>
+                    <p class="item-text">
+                        Freshly ground chuck, onion powder, freshly ground black pepper, slices deli-counter American cheese, large burger buns, ketchup, mayonnaise, thousand island dressing, sliced red onion, sliced tomatoes, sliced pickles, fresh lettuce leaves and french
+                        fries
+                    </p>
+                </div>
+            </article>
+            <article class="menu-item">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/pretzel-dog-recipe-1-646e3391bf702.jpg?crop=0.799xw:0.799xh;0,0.116xh&resize=980:*" class="photo" alt="milkshake">
+                <div class="info-section">
+                    <header>
+                        <h4>Pretzel Dogs
+                                                </h4>
+                        <h4 class="price">8.00€</h4>
+                    </header>
+                    <p class="item-text">
+                        4x, large egg,beef hot dogs, patted dry, Ketchup and mustard, to serve
+                    </p>
+                </div>
+            </article>
+            <article class="menu-item">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/bacon-wrapped-hot-dogs-1-1653592481.jpg?crop=1xw:1xh;center,top&resize=980:*" class="photo" alt="milkshake">
+                <div class="info-section">
+                    <header>
+                        <h4>Bacon-Wrapped Hot Dogs</h4>
+                        <h4 class="price">13.00€</h4>
+                    </header>
+                    <p class="item-text">
+                        Beef hot dogs, slices thin center-cut bacon, hot dog buns, Pickled jalapeño slices, for garnish, Chopped red onion, for garnish, Ketchup Mustard for garnish and Potato chips
+                    </p>
+                </div>
+            </article>
+            </article>
+            <article class="menu-item">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/sun-dried-tomato-pesto-recipe-1-665e18ebee8c1.jpg?crop=1xw:1xh;center,top&resize=1200:*" class="photo" alt="milkshake">
+                <div class="info-section">
+                    <header>
+                        <h4>Sun-Dried Tomato Pesto</h4>
+                        <h4 class="price">10.00€</h4>
+                    </header>
+                    <p class="item-text">
+                        Penne pasta, olive oil, jar sun-dried tomatoes in oil, walnuts, grated parmesan cheese, garlic cloves, lemon zest, ricotta cheese, chopped fresh basil, plus more for garnish (optional)
+                    </p>
+                </div>
+            </article>
+            <article class="menu-item">
+                <img src="https://newmansown.com/wp-content/uploads/2022/03/Homemade-lasagna.png" class="photo" alt="milkshake">
+                <div class="info-section">
+                    <header>
+                        <h4>Lasagna</h4>
+                        <h4 class="price">12.00€</h4>
+                    </header>
+                    <p class="item-text">
+                        Hot breakfast sausage, ground beef, tomato paste, whole tomatoes, dried parsley, parmesan cheese, olive oil, sliced mozzarella cheese</p>
+                </div>
+            </article>
+            <article class="menu-item">
+                <img src="https://laurenslatest.com/wp-content/uploads/2022/01/bbq-chicken-in-oven-3.jpg" class="photo" alt="Chicken">
+                <div class="info-section">
+                    <header>
+                        <h4>Oven BBQ Chicken</h4>
+                        <h4 class="price">13.90€</h4>
+                    </header>
+                    <p class="item-text">
+                        BBQ sauce, garlic grated, Hot sauce, Olive oil, bone-in skin-on chicken thighs, black pepper </p>
+                </div>
+            </article>
+            <article class="menu-item">
+                <img src="https://www.inspiredtaste.net/wp-content/uploads/2016/06/Chickpea-Salad-Recipe-1-1200.jpg" class="photo" alt="Salad">
+                <div class="info-section">
+                    <header>
+                        <h4>Chickpea Salad
+            </h4>
+                        <h4 class="price">9.90€</h4>
+                    </header>
+                    <p class="item-text">
+                        chickpeas, feta, cucumber, cherry tomatoes, orange bell pepper, avocadoscubed, basil, parsley, olive oil, fresh lemon, red wine vinegar, grated garlic clove, red pepper, black pepper </p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
